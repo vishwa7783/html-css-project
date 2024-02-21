@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+#header ,#img-div,#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:4px;
+}
+
+#main{
+    max-width:100%;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+img{
+    background-color: antiquewhite;
+}
+
+#tribute-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tribute-sec{
+    padding: 5px;
+    margin: 10px;
+    width: 60%;
+}
+
+.tribute-sec p{
+    padding-top: 10px;
+}
+
+
+
+@media (max-width:790px){
+    img{
+        width: 300px;
+    }
+    #footer p{
+        width: 3oopx;
+        padding-left:5% ;
+    }
+}
+
