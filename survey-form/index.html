@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main id="main">
+        <header id="header">
+            <h1 id="title">Survey Form</h1>
+            <p>How much do you know about Birsa Munda?</p>
+        </header>
+
+        <form id="survey-form">
+            <section class="form-sec">
+                <label id="name-label" for="name">Name
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </label>
+            </section>
+
+            <section class="form-sec">
+                <label id="email-label" for="email">Email
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                    </lable>
+            </section>
+
+            <section class="form-sec">
+                <label id="age-label" for="number">Age
+                    <input id="number" type="number" placeholder="Enter your age in year" min="6" max="110" required>
+                </label>
+            </section>
+
+            <section class="form-sec">
+                <p>What are you right now?</p>
+                <select id="dropdown-occupation" name="options">
+                    <option disabled selected value>
+                        Selct from below options
+                    </option>
+                    <option value="student">Student</option>
+                    <option value="professor">Professor</option>
+                    <option value="Others">Others</option>
+                </select>
+            </section>
+
+            <section class="form-sec">
+                <p>Date of year of Birsa Munda</p>
+                <label class="radio-label">
+                    <input name="date-of-year" value="1850" type="radio" class="radio-input">
+                    1850
+                </label>
+                <label class="radio-label">
+                    <input name="date-of-year" value="1875" type="radio" class="radio-input">
+                    1875
+                </label>
+                <label class="radio-label">
+                    <input name="date-of-year" value="1860" type="radio" class="radio-input">
+                    1860
+                </label>
+            </section>
+
+            <section class="form-sec">
+                <p>Born place of Birsa Munda</p>
+                <select id="dropdown-place" name="options">
+                    <option disabled selected value>
+                        Selct from below options
+                    </option>
+                    <option value="bihar">Bihar</option>
+                    <option value="uttar-pradesh">Uttar Pradesh</option>
+                    <option value="odisha">Odisha</option>
+                    <option value="dont-know">Don't Know</option>
+                </select>
+            </section>
+
+            <section class="form-sec">
+                <p>He is known for</p>
+                <label><input name="known-for" value="rebellion" type="checkbox">Rebellion</label>
+                <label><input name="known-for" value="leadership" type="checkbox">Leadership</label>
+                <label><input name="known-for" value="visionary" type="checkbox">Visionary </label>
+                <label><input name="known-for" value="social-justice" type="checkbox">Social justice</label>
+                <label><input name="known-for" value="legacy" type="checkbox">Legacy</label>
+            </section>
+
+            <section class="form-sec">
+                <p>Say something about Birsa Munda</p>
+                <textarea name="user-knowledge" rows="5"></textarea>
+            </section>
+
+            <section class="form-sec">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>

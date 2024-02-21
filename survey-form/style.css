@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #72A0C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+main {
+    color: #F0F8FF;
+    font-size: xx-large;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#title {
+    padding: 8px;
+}
+
+#survey-form {
+    background-color: #003153;
+    margin-top: 10px;
+}
+
+.form-sec {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+#name-label,
+#email-label,
+#age-label {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+
+input,
+select,
+textarea {
+    font-size: x-large;
+}
+
+#submit {
+    font-size: xx-large;
+    color: white;
+    background-color: #003153;
+    height: 50px;
+
+}
+
+#submit:hover {
+    background-color: darkgreen;
+    height: 50px;
+}
+
+@media(max-width:605px) {
+    main {
+        width: 300px;
+        color: #F0F8FF;
+        font-size: large;
+    }
+
+    #submit {
+        font-size: large;
+        color: white;
+        background-color: #003153;
+        height: 50px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: medium;
+    }
+}
